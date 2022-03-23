@@ -9,19 +9,15 @@ body {
   color:rgb(243, 235, 235);
   display: flex;
   flex-direction: column;
-  overflow:scroll
+  overflow-y:scroll;
+  scrollbar-color: auto
 }
 
 img {
   width: 600px;
 }
 
-button {
-  font-family: Roboto, sans-serif;
-  border: none;
-  border-radius: 8px;
-  background: #eee;
-}
+
 
 input {
   border: 1px solid #ddd;
@@ -36,7 +32,15 @@ input {
 button {
   padding: 8px 16px;
   background-color: rgb(72, 124, 236);
-  color:#eee
+  color:#eee;
+  font-size: 25px;
+  border: 2px solid white;
+  background-color: white;
+  cursor: pointer;
+  font-family: Roboto, sans-serif;
+  border-radius: 8px;
+  background: #3882F6;
+
 }
 
 .content {
@@ -57,7 +61,7 @@ a {
 .header, .footer {
   display: flex;
   justify-content: space-between;
-  text-align: center;;
+  text-align: center;
   padding: 20px;
 }
 
@@ -101,7 +105,6 @@ ul, li {
 
 .container {
   display: flex;
-  justify-content: center;
   gap: 10px;
   background-color: white;
   color: black;
@@ -135,4 +138,24 @@ ul, li {
   flex-direction: column;
   padding-left:60px;
   padding-right: 60px;
+}
+
+.modal {
+  background-color: #3882F6;
+  border-radius: 10px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 80px;
+  width: 900px
+}
+/*
+.sub-main{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  height: 300px;
 }
